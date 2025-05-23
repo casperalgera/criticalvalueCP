@@ -24,10 +24,6 @@ position    :   Position at which we will insert string
 Returns string with insert inserted at position.
 '''
 def stringReplace(string, insert, position):
-    if position == 0:
-        return insert + string[1:]
-    elif position == len(string) - 1:
-        return string[:len(string) - 1] + insert
     return string[:position] + insert + string[position + 1:] 
 '''
 heal        :   A bool that indicates whether or not the event is a recovery
